@@ -1,0 +1,27 @@
+
+spring:
+  profiles:
+    active: dev
+    
+---
+spring:
+    profiles: dev
+    data.monodb:
+    host: dev
+    port: 27017
+    database: local
+      
+---
+spring:
+    profiles: nonprod
+    data.monodb:
+    host: dev
+    port: 27017
+    database: local
+---
+spring:
+    profiles: prod
+    data.monodb:
+    host: dev
+    port: 27017
+    database: local
